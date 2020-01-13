@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6465A5"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/text_view_first_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="問︰請問1~10的數字中，哪些數字是質數？"
+        android:textColor="#F3E96B"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_first_question_result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_first_question_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#F3E96B"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_second_question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_first_question" />
+
+    <TextView
+        android:id="@+id/text_view_second_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="問︰請根據[1, 2, 6, ..., 3628800]這組數字的規律，補齊中間省略的數字。"
+        android:textColor="#F28A30"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_second_question_result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_first_question_result" />
+
+    <TextView
+        android:id="@+id/text_view_second_question_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#F28A30"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_third_question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_second_question" />
+
+    <TextView
+        android:id="@+id/text_view_third_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="問︰請問2020年中華民國總統候選人有誰？請提供號次與姓名。"
+        android:textColor="#F05837"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_view_third_question_result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_second_question_result" />
+
+    <TextView
+        android:id="@+id/text_view_third_question_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#F05837"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_third_question" />
+</androidx.constraintlayout.widget.ConstraintLayout>
